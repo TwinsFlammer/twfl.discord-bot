@@ -4,6 +4,7 @@ import br.com.twinsflammer.discordbot.configuration.Configuration;
 import br.com.twinsflammer.common.shared.permissions.group.data.Group;
 import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.entities.Role;
+import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
 /**
@@ -28,8 +29,23 @@ public class DiscordGroup extends Group {
     public Role getRole(Guild guild) {
         JSONObject jsonObject = Configuration.getJsonObject();
 
+        JSONArray guilds = (JSONArray) jsonObject.get("guilds");
 
+        Object object = guilds.stream()
+                .filter(o -> {
+                    JSONObject jsonObject2 = (JSONObject) o;
 
-        return guild.getRoleById(this.getDiscordGroupId());
+                    Long guildId = (Long) jsonObject2.get("id");
+
+                    return guild.getId().equals(guildId);
+                })
+                .findFirst()
+                .orElse(null);
+
+        JSONObject jsonObject1 = (JSONObject) object;
+
+        System.out.println(jsonObject1);
+
+        return null;
     }
 }
