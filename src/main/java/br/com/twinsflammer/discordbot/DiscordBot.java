@@ -1,6 +1,7 @@
 package br.com.twinsflammer.discordbot;
 
 import br.com.twinsflammer.common.shared.Common;
+import br.com.twinsflammer.common.shared.util.Printer;
 import br.com.twinsflammer.discordbot.configuration.Configuration;
 import br.com.twinsflammer.discordbot.group.data.DiscordGroup;
 import br.com.twinsflammer.discordbot.group.factory.DiscordGroupFactory;
@@ -57,6 +58,8 @@ public class DiscordBot {
         Presence presence = this.client.getPresence();
 
         presence.setStatus(OnlineStatus.OFFLINE);
+
+        Printer.INFO.parseColors("&aBot do discord do TwinsFlammer iniciado com sucesso!");
     }
 
     public static void main(String[] args) throws LoginException {
