@@ -1,0 +1,26 @@
+{
+  "access_token": "NzEyOTk4OTUzMDc5MDEzNDU5.XseIcg.G6jm3tmHuOrPmhopCRNo_MIYBM8",
+  "guilds": [
+    {
+      "type": "STAFF",
+      "id": 712098991114027021,
+      "groups": {
+        "master": {
+          "id": 712100683834196011
+        },
+        "director": {
+          "id": 712100883671810088
+        },
+        "administrator": {
+          "id": 712101157090099300
+        },
+        "moderator": {
+          "id": 712101225352659085
+        },
+        "helper": {
+          "id": 712101287927218270
+        }
+      }
+    }
+  ]
+}
