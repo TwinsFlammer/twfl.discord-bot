@@ -1,12 +1,9 @@
-package br.com.twinflammer.dicordbot.queue.manager;
+package br.com.twinsflammer.discordbot.queue.manager;
 
-import br.com.twinflammer.dicordbot.user.data.DiscordUser;
+import br.com.twinsflammer.discordbot.user.data.DiscordUser;
 import br.com.twinsflammer.common.shared.Common;
-import br.com.twinsflammer.common.shared.permissions.user.data.User;
-import com.google.common.collect.Lists;
 import com.google.common.collect.Queues;
 
-import java.util.List;
 import java.util.Queue;
 import java.util.concurrent.TimeUnit;
 

@@ -1,6 +1,6 @@
-package br.com.twinflammer.dicordbot.group.factory;
+package br.com.twinsflammer.discordbot.group.factory;
 
-import br.com.twinflammer.dicordbot.group.data.DiscordGroup;
+import br.com.twinsflammer.discordbot.group.data.DiscordGroup;
 import com.google.common.collect.Lists;
 
 import java.util.List;

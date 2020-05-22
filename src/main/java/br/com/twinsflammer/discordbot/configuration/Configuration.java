@@ -1,6 +1,6 @@
-package br.com.twinflammer.dicordbot.configuration;
+package br.com.twinsflammer.discordbot.configuration;
 
-import br.com.twinflammer.dicordbot.DiscordBot;
+import br.com.twinsflammer.discordbot.DiscordBot;
 import com.google.common.io.ByteSource;
 import com.google.common.io.Files;
 import lombok.Getter;
@@ -23,8 +23,6 @@ public class Configuration {
         JSONObject jsonObject1 =  null;
 
         File file = new File(Configuration.this.FILE_NAME);
-
-        System.out.println(file);
 
         if (!file.exists()) {
             try {

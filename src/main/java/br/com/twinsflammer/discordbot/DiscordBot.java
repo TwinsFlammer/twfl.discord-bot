@@ -1,12 +1,12 @@
-package br.com.twinflammer.dicordbot;
+package br.com.twinsflammer.discordbot;
 
-import br.com.twinflammer.dicordbot.configuration.Configuration;
-import br.com.twinflammer.dicordbot.group.data.DiscordGroup;
-import br.com.twinflammer.dicordbot.group.factory.DiscordGroupFactory;
-import br.com.twinflammer.dicordbot.manager.StartManager;
-import br.com.twinflammer.dicordbot.user.data.DiscordUser;
-import br.com.twinflammer.dicordbot.user.factory.DiscordUserFactory;
 import br.com.twinsflammer.common.shared.Common;
+import br.com.twinsflammer.discordbot.configuration.Configuration;
+import br.com.twinsflammer.discordbot.group.data.DiscordGroup;
+import br.com.twinsflammer.discordbot.group.factory.DiscordGroupFactory;
+import br.com.twinsflammer.discordbot.manager.StartManager;
+import br.com.twinsflammer.discordbot.user.data.DiscordUser;
+import br.com.twinsflammer.discordbot.user.factory.DiscordUserFactory;
 import lombok.Getter;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
@@ -40,6 +40,8 @@ public class DiscordBot {
     private ClassLoader classLoader;
 
     public DiscordBot() throws LoginException {
+        new Common();
+
         this.classLoader = this.getClass().getClassLoader();
 
         DiscordBot.instance = this;

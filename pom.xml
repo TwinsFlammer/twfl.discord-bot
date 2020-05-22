@@ -49,11 +49,33 @@
                             <goal>shade</goal>
                         </goals>
                         <configuration>
-                            <artifactSet>
-                                <includes>
-                                    <include>${project.groupId}:common-shared</include>
-                                </includes>
-                            </artifactSet>
+                            <relocations>
+                                <relocation>
+                                    <pattern>redis.clients.jedis</pattern>
+                                    <shadedPattern>redis.clients.jedis</shadedPattern>
+                                </relocation>
+                                <relocation>
+                                    <pattern>redis.clients.util</pattern>
+                                    <shadedPattern>redis.clients.util</shadedPattern>
+                                </relocation>
+                                <relocation>
+                                    <pattern>com.mongodb</pattern>
+                                    <shadedPattern>com.mongodb</shadedPattern>
+                                </relocation>
+                                <relocation>
+                                    <pattern>org.mongodb.bson</pattern>
+                                    <shadedPattern>com.mongodb.bson</shadedPattern>
+                                </relocation>
+                                <relocation>
+                                    <pattern>com.google.common.io</pattern>
+                                    <shadedPattern>com.google.common.io</shadedPattern>
+                                </relocation>
+                            </relocations>
+<!--                            <artifactSet>-->
+<!--                                <includes>-->
+<!--                                    <include>${project.groupId}:common-shared</include>-->
+<!--                                </includes>-->
+<!--                            </artifactSet>-->
                         </configuration>
                     </execution>
                 </executions>

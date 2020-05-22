@@ -1,6 +1,6 @@
-package br.com.twinflammer.dicordbot.group.data;
+package br.com.twinsflammer.discordbot.group.data;
 
-import br.com.twinflammer.dicordbot.configuration.Configuration;
+import br.com.twinsflammer.discordbot.configuration.Configuration;
 import br.com.twinsflammer.common.shared.permissions.group.data.Group;
 import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.entities.Role;

@@ -1,15 +1,11 @@
-package br.com.twinflammer.dicordbot.user.data;
+package br.com.twinsflammer.discordbot.user.data;
 
-import br.com.twinflammer.dicordbot.DiscordBot;
-import br.com.twinsflammer.common.shared.permissions.group.data.Group;
+import br.com.twinsflammer.discordbot.DiscordBot;
 import br.com.twinsflammer.common.shared.permissions.user.data.User;
 import net.dv8tion.jda.api.JDA;
-import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.entities.Role;
-
-import java.util.List;
 
 /**
  * @author SrGutyerrez
